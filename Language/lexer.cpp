@@ -2,30 +2,23 @@
 
 Lexer::Lexer()
 {
-	std::string start_input = "aaa";
-	input = start_input;
+	return;
 }
 
-Lexer::Lexer(std::string start_input)
-{
-	input = start_input;
-}
-
-void Lexer::update_input(std::string new_input)
-{
-	input = new_input;
-}
-
-bool Lexer::input_is_valid()
+bool Lexer::input_is_valid(std::string input)
 {
 	buff = new Letter(input[0], 4);
 	for (int input_index = 0; input_index < input.length(); input_index++)
 	{
 		if (input[input_index + 1] == '\0')
+		{
+			delete buff;
 			return true;
-		if (isdigit(input[input_index]) || isdigit(input[input_index + 1]))
+		}
+
+		if (isdigit(input[input_index + 1]))
 			continue;
-		if (is_letter_symbol(input[input_index]) || is_letter_symbol(input[input_index + 1]))
+		if (is_letter_symbol(input[input_index + 1]))
 			continue;
 		if (!buff->is_letter_accepted(input[input_index + 1]))
 			return false;
