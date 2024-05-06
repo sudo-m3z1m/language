@@ -1,7 +1,7 @@
 ﻿#include "lexer.h"
 #include "parser.h"
 
-bool analyze_input(std::string input, Lexer lexer)
+bool analyze_input(std::string input, Lexer lexer, Parser parser)
 {
 	std::string word;
 
@@ -9,7 +9,7 @@ bool analyze_input(std::string input, Lexer lexer)
 	{
 		if (input[letter_index] == ' ')
 		{
-			if (!lexer.input_is_valid(word))
+			if (!lexer.input_is_valid(word) || !parser.tokenize(word))
 			{
 				std::cout << "Compiling error in: " << word << std::endl;
 				return false;
@@ -45,7 +45,8 @@ int main()
         std::cout << "Compiling error" << std::endl;
 =======
     Lexer lexer;
-    analyze_input(input, lexer);
+	Parser parser;
+    analyze_input(input, lexer, parser);
 
 >>>>>>> 8a6dcff0a2db1590bc1a7105abadcdbcd0df3517
     system("pause");

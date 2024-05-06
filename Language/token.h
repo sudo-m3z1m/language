@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -10,7 +11,7 @@ public:
 	Token(std::string word);
 	~Token();
 	void generate_accepted_tokens(std::string word);
-	//bool is_token_accepted();
+	bool is_token_accepted(Token token);
 
 private:
 	enum TokenType
