@@ -3,24 +3,13 @@
 Letter::Letter()
 {
 	letter = 'a';
-	max_accepted_letters = 8;
-	accepted_letters = new char[max_accepted_letters];
-
 	generate_accepted_letters();
 }
 
 Letter::Letter(char letter, int max_letters)
 {
 	this->letter = letter;
-	max_accepted_letters = max_letters;
-
-	accepted_letters = new char[max_accepted_letters];
 	generate_accepted_letters();
-}
-
-Letter::~Letter()
-{
-	delete[] accepted_letters;
 }
 
 void Letter::generate_accepted_letters()
@@ -28,29 +17,29 @@ void Letter::generate_accepted_letters()
 	switch (letter)
 	{
 	case 'a':
-		accepted_letters[0] = 'r';
-		accepted_letters[1] = 'n';
+		accepted_letters.push_back('r');
+		accepted_letters.push_back('n');
 		break;
 	case 'r':
-		accepted_letters[0] = 'a';
+		accepted_letters.push_back('a');
 		break;
 	case 'v':
-		accepted_letters[0] = 'a';
+		accepted_letters.push_back('a');
 		break;
 	case 'f':
-		accepted_letters[0] = 'o';
+		accepted_letters.push_back('o');
 		break;
 	case 'o':
-		accepted_letters[0] = 'r';
+		accepted_letters.push_back('r');
 		break;
 	case 'e':
-		accepted_letters[0] = 'n';
+		accepted_letters.push_back('n');
 		break;
 	case 'n':
-		accepted_letters[0] = 'd';
+		accepted_letters.push_back('d');
 		break;
 	case 'd':
-		accepted_letters[0] = 'a';
+		accepted_letters.push_back('a');
 		break;
 	default:
 		break;
@@ -59,7 +48,7 @@ void Letter::generate_accepted_letters()
 
 bool Letter::is_letter_accepted(char letter)
 {
-	for (int letter_index = 0; letter_index < max_accepted_letters; letter_index++)
+	for (int letter_index = 0; letter_index < accepted_letters.size(); letter_index++)
 	{
 		char accept_letter = accepted_letters[letter_index];
 		if (letter == accept_letter)
