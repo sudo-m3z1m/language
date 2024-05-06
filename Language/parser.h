@@ -7,7 +7,7 @@ class Parser
 public:
 	Parser();
 	~Parser();
-	void tokenize();
+	bool tokenize(std::string token_word);
 
 private:
 	std::vector<Token> tokens;
