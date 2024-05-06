@@ -21,7 +21,6 @@ bool Parser::tokenize(std::string token_word)
 	}
 	if (!tokens.back().is_token_accepted(new_token))
 	{
-		std::cout << "Tokenize error!" << std::endl;
 		return false;
 	}
 	tokens.push_back(new_token);

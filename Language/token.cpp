@@ -40,11 +40,14 @@ void Token::generate_accepted_tokens(std::string word)
 		accepted_tokens.push_back(DigidToken);
 		return;
 	}
-	type = DigidToken;
-	value = stoi(word);
-	accepted_tokens.push_back(PlusToken);
-	accepted_tokens.push_back(MinusToken);
-	accepted_tokens.push_back(EqualToken);
+	if (isdigit(word[0]))
+	{
+		type = DigidToken;
+		value = stoi(word);
+		accepted_tokens.push_back(PlusToken);
+		accepted_tokens.push_back(MinusToken);
+		accepted_tokens.push_back(EqualToken);
+	}
 }
 
 bool Token::is_token_accepted(Token token)
