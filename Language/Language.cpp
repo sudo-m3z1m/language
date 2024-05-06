@@ -13,4 +13,5 @@ int main()
         std::cout << input << std::endl;
     else
         std::cout << "Compiling error" << std::endl;
+    system("pause");
 }
