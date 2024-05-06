@@ -40,7 +40,7 @@ void Token::generate_accepted_tokens(std::string word)
 		accepted_tokens.push_back(DigidToken);
 		return;
 	}
-	if (isdigit(word[0]))
+	if (isdigit(word[0])) //sheet crutch need to remade this
 	{
 		type = DigidToken;
 		value = stoi(word);
