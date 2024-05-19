@@ -19,7 +19,10 @@ private:
 		DigidToken,
 		PlusToken,
 		MinusToken,
-		EqualToken
+		EqualToken,
+		DeclarationToken,
+		ConstToken,
+		VariableToken
 	};
 
 	TokenType type;

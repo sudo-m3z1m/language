@@ -24,6 +24,7 @@ void Token::generate_accepted_tokens(std::string word)
 		type = PlusToken;
 		value = 0;
 		accepted_tokens.push_back(DigidToken);
+		accepted_tokens.push_back(VariableToken);
 		return;
 	}
 	if (word == "-")
@@ -31,6 +32,7 @@ void Token::generate_accepted_tokens(std::string word)
 		type = MinusToken;
 		value = 0;
 		accepted_tokens.push_back(DigidToken);
+		accepted_tokens.push_back(VariableToken);
 		return;
 	}
 	if (word == "=")
@@ -38,12 +40,36 @@ void Token::generate_accepted_tokens(std::string word)
 		type = EqualToken;
 		value = 0;
 		accepted_tokens.push_back(DigidToken);
+		accepted_tokens.push_back(VariableToken);
 		return;
 	}
 	if (isdigit(word[0])) //sheet crutch need to remade this
 	{
 		type = DigidToken;
 		value = stoi(word);
+		accepted_tokens.push_back(PlusToken);
+		accepted_tokens.push_back(MinusToken);
+		accepted_tokens.push_back(EqualToken);
+		return;
+	}
+	if (word == "var")
+	{
+		type = DeclarationToken;
+		value = 0;
+		accepted_tokens.push_back(VariableToken);
+		return;
+	}
+	if (word == "const")
+	{
+		type = ConstToken;
+		value = 0;
+		accepted_tokens.push_back(VariableToken);
+		return;
+	}
+	else
+	{
+		type = VariableToken;
+		value = 0;
 		accepted_tokens.push_back(PlusToken);
 		accepted_tokens.push_back(MinusToken);
 		accepted_tokens.push_back(EqualToken);

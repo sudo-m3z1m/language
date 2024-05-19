@@ -20,6 +20,9 @@ void Letter::generate_accepted_letters()
 		accepted_letters.push_back('r');
 		accepted_letters.push_back('n');
 		break;
+	case 'c':
+		accepted_letters.push_back('o');
+		break;
 	case 'r':
 		accepted_letters.push_back('a');
 		break;
@@ -31,16 +34,29 @@ void Letter::generate_accepted_letters()
 		break;
 	case 'o':
 		accepted_letters.push_back('r');
+		accepted_letters.push_back('n');
 		break;
 	case 'e':
 		accepted_letters.push_back('n');
 		break;
 	case 'n':
 		accepted_letters.push_back('d');
+		accepted_letters.push_back('s');
 		break;
 	case 'd':
 		accepted_letters.push_back('a');
 		break;
+	case 's':
+		accepted_letters.push_back('t');
+		break;
+	case 't':
+		accepted_letters.push_back('y');
+		break;
+	case 'y':
+		accepted_letters.push_back('p');
+		break;
+	case 'p':
+		accepted_letters.push_back('e');
 	default:
 		break;
 	}

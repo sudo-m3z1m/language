@@ -20,9 +20,8 @@ bool Parser::tokenize(std::string token_word)
 		return true;
 	}
 	if (!tokens.back().is_token_accepted(new_token))
-	{
 		return false;
-	}
+
 	tokens.push_back(new_token);
 	return true;
 }

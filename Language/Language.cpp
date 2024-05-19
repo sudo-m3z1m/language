@@ -23,11 +23,6 @@ bool analyze_input(std::string input, Lexer lexer, Parser parser)
 	return true;
 }
 
-//void print_result(std::string error) //Need to make debug class 
-//{
-//
-//}
-
 int main()
 {
     std::string input;
@@ -36,18 +31,10 @@ int main()
     std::cout << "Enter string -> ";
     std::getline(std::cin, input);
     std::cout << std::endl;
-    
-<<<<<<< HEAD
-    Lexer lexer(input);
-    if (lexer.input_is_valid())
-        std::cout << input << std::endl;
-    else
-        std::cout << "Compiling error" << std::endl;
-=======
+
     Lexer lexer;
 	Parser parser;
     analyze_input(input, lexer, parser);
 
->>>>>>> 8a6dcff0a2db1590bc1a7105abadcdbcd0df3517
     system("pause");
 }
