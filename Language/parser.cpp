@@ -13,7 +13,8 @@ Parser::~Parser()
 bool Parser::tokenize(std::string token_word)
 {
 	Token new_token(token_word);
-	
+	new_token.print_token();
+
 	if (tokens.empty())
 	{
 		tokens.push_back(new_token);

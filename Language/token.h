@@ -12,6 +12,8 @@ public:
 	~Token();
 	void generate_accepted_tokens(std::string word);
 	bool is_token_accepted(Token token);
+	bool is_word_digit(std::string word);
+	void print_token();
 
 private:
 	enum TokenType

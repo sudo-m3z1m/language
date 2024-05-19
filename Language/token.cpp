@@ -43,7 +43,7 @@ void Token::generate_accepted_tokens(std::string word)
 		accepted_tokens.push_back(VariableToken);
 		return;
 	}
-	if (isdigit(word[0])) //sheet crutch need to remade this
+	if (is_word_digit(word))
 	{
 		type = DigidToken;
 		value = stoi(word);
@@ -76,6 +76,16 @@ void Token::generate_accepted_tokens(std::string word)
 	}
 }
 
+bool Token::is_word_digit(std::string word)
+{
+	for (int digit_index = 0; digit_index < word.length(); digit_index++)
+	{
+		if (!isdigit(word[digit_index]))
+			return false;
+	}
+	return true;
+}
+
 bool Token::is_token_accepted(Token token)
 {
 	for (int token_index = 0; token_index < accepted_tokens.size(); token_index++)
@@ -84,4 +94,36 @@ bool Token::is_token_accepted(Token token)
 			return true;
 	}
 	return false;
+}
+
+void Token::print_token()
+{
+	std::string token_string;
+	switch (type)
+	{
+	case DigidToken:
+		token_string = "DigidToken";
+		break;
+	case PlusToken:
+		token_string = "PlusToken";
+		break;
+	case MinusToken:
+		token_string = "MinusToken";
+		break;
+	case EqualToken:
+		token_string = "EqualToken";
+		break;
+	case DeclarationToken:
+		token_string = "DeclarationToken";
+		break;
+	case ConstToken:
+		token_string = "ConstToken";
+		break;
+	case VariableToken:
+		token_string = "VariableToken";
+		break;
+	default:
+		break;
+	}
+	std::cout << token_string << std::endl;
 }
