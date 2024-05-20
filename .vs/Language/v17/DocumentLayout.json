@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\token.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\token.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\token.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\Language.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\Language.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\letter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\letter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\Language.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\Language.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\token.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|solutionrelative:Language\\token.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEC1F73A-372D-4415-A771-FBDB8EA0FEB8}|Language\\Language.vcxproj|D:\\GitProjects\\language\\Language\\parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -50,43 +50,40 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Language.cpp",
               "DocumentMoniker": "D:\\GitProjects\\language\\Language\\Language.cpp",
               "RelativeDocumentMoniker": "Language\\Language.cpp",
               "ToolTip": "D:\\GitProjects\\language\\Language\\Language.cpp",
               "RelativeToolTip": "Language\\Language.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-19T11:26:26.883Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "letter.cpp",
               "DocumentMoniker": "D:\\GitProjects\\language\\Language\\letter.cpp",
               "RelativeDocumentMoniker": "Language\\letter.cpp",
               "ToolTip": "D:\\GitProjects\\language\\Language\\letter.cpp",
               "RelativeToolTip": "Language\\letter.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAAD0AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-19T11:26:25.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T11:26:25.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "lexer.cpp",
               "DocumentMoniker": "D:\\GitProjects\\language\\Language\\lexer.cpp",
               "RelativeDocumentMoniker": "Language\\lexer.cpp",
               "ToolTip": "D:\\GitProjects\\language\\Language\\lexer.cpp",
               "RelativeToolTip": "Language\\lexer.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAcAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-19T11:26:21.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T11:26:21.222Z"
             },
             {
               "$type": "Document",
@@ -96,20 +93,20 @@
               "RelativeDocumentMoniker": "Language\\token.cpp",
               "ToolTip": "D:\\GitProjects\\language\\Language\\token.cpp",
               "RelativeToolTip": "Language\\token.cpp",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAAEUAAAACAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-06T09:12:30.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "parser.cpp",
               "DocumentMoniker": "D:\\GitProjects\\language\\Language\\parser.cpp",
               "RelativeDocumentMoniker": "Language\\parser.cpp",
               "ToolTip": "D:\\GitProjects\\language\\Language\\parser.cpp",
               "RelativeToolTip": "Language\\parser.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-06T09:12:27.199Z",
               "EditorCaption": ""
@@ -146,13 +143,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "token.h",
               "DocumentMoniker": "D:\\GitProjects\\language\\Language\\token.h",
               "RelativeDocumentMoniker": "Language\\token.h",
               "ToolTip": "D:\\GitProjects\\language\\Language\\token.h",
               "RelativeToolTip": "Language\\token.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-06T09:17:31.14Z",
               "EditorCaption": ""
